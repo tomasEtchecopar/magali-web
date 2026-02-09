@@ -1,59 +1,140 @@
-# MagaliWeb
+# Adiestramiento MDQ - Angular 21
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+Landing page profesional para servicios de adiestramiento canino en Mar del Plata.
 
-## Development server
+## Stack Tecnológico
 
-To start a local development server, run:
+- **Angular 21** - Framework principal
+- **Standalone Components** - Arquitectura moderna sin módulos
+- **TailwindCSS** - Estilos utility-first
+- **TypeScript 5.6** - Tipado estático
+- **Google Material Icons** - Iconografía
 
-```bash
-ng serve
+## Estructura del Proyecto
+
+```
+src/
+├── app/
+│   ├── components/          # Componentes standalone
+│   │   ├── navbar.component.ts
+│   │   ├── header.component.ts
+│   │   ├── problems.component.ts
+│   │   ├── methodology.component.ts
+│   │   ├── bio.component.ts
+│   │   ├── testimonials.component.ts
+│   │   ├── cta.component.ts
+│   │   ├── footer.component.ts
+│   │   └── whatsapp-button.component.ts
+│   ├── app.component.ts     # Componente raíz
+│   ├── app.config.ts        # Configuración de la app
+│   └── app.routes.ts        # Definición de rutas
+├── index.html               # HTML principal
+├── main.ts                  # Punto de entrada
+└── styles.scss             # Estilos globales
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Instalación
 
 ```bash
-ng generate component component-name
+# Instalar dependencias
+npm install
+
+# Desarrollo
+npm start
+# La app estará en http://localhost:4200
+
+# Producción
+npm run build
+# Los archivos estarán en dist/adiestramiento-mdq
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Características
 
+✅ **Componentes standalone** - Sin NgModules, arquitectura moderna
+✅ **Signals** - Sistema de reactividad de Angular 21
+✅ **SSR Ready** - Preparado para Server-Side Rendering
+✅ **Responsive** - Diseño adaptable mobile-first
+✅ **Dark Mode** - Soporte nativo con Tailwind
+✅ **SEO Optimizado** - Meta tags y estructura semántica
+✅ **Performance** - Lazy loading y optimización de assets
+
+## Componentes
+
+### NavbarComponent
+Navegación sticky con enlaces a secciones y botón de WhatsApp.
+
+### HeaderComponent
+Hero section con imagen de fondo, título principal y CTAs.
+
+### ProblemsComponent
+Grid de problemas comunes con iconos Material.
+
+### MethodologyComponent
+Proceso de trabajo en 3 pasos con timeline visual.
+
+### BioComponent
+Sección "Sobre mí" con imagen y lista de beneficios.
+
+### TestimonialsComponent
+Testimonios de clientes en grid responsivo.
+
+### CtaComponent
+Call-to-action final con patrón de fondo.
+
+### FooterComponent
+Pie de página con información de contacto y redes.
+
+### WhatsappButtonComponent
+Botón flotante de WhatsApp con hover animado.
+
+## Personalización
+
+### Colores (en index.html)
+```javascript
+colors: {
+  "primary": "#17cf26",      // Verde principal
+  "background-light": "#f6f8f6",
+  "background-dark": "#112112",
+  "earth-100": "#f0f2ef",
+  "earth-200": "#e2e6e1",
+  "earth-800": "#2d382e",
+}
+```
+
+### WhatsApp
+Actualizar el número en todos los componentes:
+```typescript
+href="https://wa.me/5492230000000"
+```
+
+## Deployment
+
+### Netlify
 ```bash
-ng generate --help
+npm run build
+# Subir carpeta dist/adiestramiento-mdq
 ```
 
-## Building
-
-To build the project run:
-
+### Vercel
 ```bash
-ng build
+vercel --prod
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+### Firebase Hosting
 ```bash
-ng test
+ng build --configuration production
+firebase deploy
 ```
 
-## Running end-to-end tests
+## Próximos pasos recomendados
 
-For end-to-end (e2e) testing, run:
+1. Configurar Angular Universal para SSR
+2. Implementar lazy loading de imágenes
+3. Agregar animaciones con @angular/animations
+4. Integrar Google Analytics
+5. Agregar formulario de contacto
+6. Implementar i18n para múltiples idiomas
 
-```bash
-ng e2e
-```
+## Licencia
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Proyecto propietario - Adiestramiento MDQ 2023

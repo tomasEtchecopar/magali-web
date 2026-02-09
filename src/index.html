@@ -1,13 +1,44 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>MagaliWeb</title>
+  <title>Adiestramiento Canino MDQ - Adiestramiento Real para Perros Reales</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#17cf26",
+            "background-light": "#f6f8f6",
+            "background-dark": "#112112",
+            "earth-100": "#f0f2ef", 
+            "earth-200": "#e2e6e1",
+            "earth-800": "#2d382e",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem", 
+            "lg": "0.5rem", 
+            "xl": "0.75rem", 
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
 </head>
-<body>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-100 antialiased overflow-x-hidden">
   <app-root></app-root>
 </body>
 </html>
