@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PHONE_NUMBER } from '../../constants';
 
 @Component({
   selector: 'app-navbar',
@@ -8,4 +9,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+PHONE_NUMBER = PHONE_NUMBER
+}
