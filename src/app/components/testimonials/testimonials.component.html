@@ -1,0 +1,16 @@
+<section class="testimonials-section">
+  <div class="testimonials-container">
+    <h2 class="testimonials-title">Experiencias de mis clientes</h2>
+    <div class="testimonials-grid">
+      <div *ngFor="let testimonial of testimonials" class="testimonial-card">
+        <span class="material-icons quote-icon">format_quote</span>
+        <p class="testimonial-quote">{{ testimonial.quote }}</p>
+        <div class="testimonial-author">
+          <div class="author-name">{{ testimonial.author }}</div>
+          <span class="author-separator">•</span>
+          <div class="author-pet">{{ testimonial.pet }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+<section class="problems-section" id="problemas">
+  <div class="problems-container">
+    <div class="problems-header">
+      <h2 class="problems-title">¿Tu perro presenta estas conductas?</h2>
+      <p class="problems-subtitle">Identificar el problema es el primer paso para mejorarlo.</p>
+    </div>
+    <div class="problems-grid">
+      <div *ngFor="let problem of problems" class="problem-card">
+        <div class="problem-icon">
+          <span class="material-icons">{{ problem.icon }}</span>
+        </div>
+        <h3 class="problem-title">{{ problem.title }}</h3>
+        <p class="problem-description">{{ problem.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

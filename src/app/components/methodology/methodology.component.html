@@ -1,0 +1,18 @@
+<section class="methodology-section" id="metodologia">
+  <div class="methodology-container">
+    <div class="methodology-header">
+      <h2 class="methodology-title">Cómo trabajo</h2>
+      <p class="methodology-subtitle">Un proceso de 3 pasos simple, claro y efectivo.</p>
+    </div>
+    <div class="methodology-content">
+      <div class="methodology-timeline"></div>
+      <div class="methodology-grid">
+        <div *ngFor="let step of steps" class="step-card">
+          <div class="step-number">{{ step.number }}</div>
+          <h3 class="step-title">{{ step.title }}</h3>
+          <p class="step-description">{{ step.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,76 @@
+.cta-section {
+  padding: 6rem 0;
+  background-color: #2d382e;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background-image: radial-gradient(#17cf26 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.cta-content {
+  position: relative;
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cta-title {
+    font-size: 3rem;
+  }
+}
+
+.cta-text {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  margin-bottom: 2.5rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  color: #2d382e;
+  background-color: #17cf26;
+  transition: all 0.3s;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+  color: #17cf26;
+  transform: translateY(-4px);
+}
+
+.cta-button .material-icons {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.cta-footer {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}

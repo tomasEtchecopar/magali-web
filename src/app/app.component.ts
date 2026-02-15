@@ -1,15 +1,15 @@
+import { CtaComponent } from './components/cta/cta.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HeaderComponent } from './components/header.component';
-import { ProblemsComponent } from './components/problems.component';
-import { MethodologyComponent } from './components/methodology.component';
-import { BioComponent } from './components/bio.component';
-import { TestimonialsComponent } from './components/testimonials.component';
-import { CtaComponent } from './components/cta.component';
-import { FooterComponent } from './components/footer.component';
-import { WhatsappButtonComponent } from './components/whatsapp-button.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { WhatsappButtonComponent } from './components/whatsapp-button/whatsapp-button.component';
+import { BioComponent } from './components/bio/bio.component';
+import { MethodologyComponent } from './components/methodology/methodology.component';
+import { ProblemsComponent } from './components/problems/problems.component';
 
 @Component({
   selector: 'app-root',

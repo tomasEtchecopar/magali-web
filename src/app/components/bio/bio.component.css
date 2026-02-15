@@ -1,0 +1,155 @@
+.bio-section {
+  padding: 5rem 0;
+  background-color: rgba(226, 230, 225, 0.3);
+}
+
+.dark .bio-section {
+  background-color: rgba(31, 41, 55, 0.2);
+}
+
+.bio-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .bio-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bio-container {
+    padding: 0 2rem;
+  }
+}
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .bio-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.bio-image-wrapper {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .bio-image-wrapper {
+    grid-column: span 5;
+    margin-bottom: 0;
+  }
+}
+
+.bio-image-background {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(23, 207, 38, 0.2);
+  border-radius: 1rem;
+  transform: translate(12px, 12px);
+}
+
+.bio-image {
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
+
+.bio-content {
+}
+
+@media (min-width: 1024px) {
+  .bio-content {
+    grid-column: span 7;
+  }
+}
+
+.bio-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #17cf26;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  border: 1px solid rgba(23, 207, 38, 0.2);
+}
+
+.dark .bio-badge {
+  background-color: #1f2937;
+}
+
+.bio-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.dark .bio-title {
+  color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .bio-title {
+    font-size: 2.25rem;
+  }
+}
+
+.bio-text {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+.dark .bio-text {
+  color: #d1d5db;
+}
+
+.bio-text p {
+  margin-bottom: 1rem;
+}
+
+.bio-text p:last-child {
+  margin-bottom: 2rem;
+}
+
+.bio-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.bio-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.bio-list .material-icons {
+  color: #17cf26;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.bio-list span:last-child {
+  color: #374151;
+}
+
+.dark .bio-list span:last-child {
+  color: #d1d5db;
+}
