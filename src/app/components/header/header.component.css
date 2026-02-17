@@ -5,6 +5,13 @@
   overflow: hidden;
 }
 
+img{
+  display: block;
+  max-width: 100%;
+  height: 40px;
+  margin-right: 2rem;
+}
+
 @media (min-width: 768px) {
   .header {
     padding-top: 8rem;

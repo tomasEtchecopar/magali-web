@@ -14,6 +14,10 @@
   justify-content: center;
   text-decoration: none;
 }
+img{
+  width: 1.875rem;
+  height: 1.875rem;
+}
 
 .whatsapp-button:hover {
   background-color: #16a34a;
