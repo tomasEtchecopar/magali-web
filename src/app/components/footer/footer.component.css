@@ -1,5 +1,5 @@
 .footer {
-  background-color: #112112;
+  background-color: #0f1a22;
   color: #9ca3af;
   padding: 3rem 0;
   border-top: 1px solid #1f2937;
@@ -52,7 +52,7 @@
 }
 
 .logo-highlight {
-  color: #17cf26;
+  color: #64b0d9;
 }
 
 .footer-location {
@@ -74,7 +74,7 @@
 }
 
 .footer-links a:hover {
-  color: #17cf26;
+  color: #64b0d9;
 }
 
 .footer-separator {

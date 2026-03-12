@@ -47,7 +47,7 @@
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.025em;
-  color: #2d382e;
+  color: #24323b;
 }
 
 .dark .logo-text {
@@ -55,7 +55,7 @@
 }
 
 .logo-highlight {
-  color: #17cf26;
+  color: #64b0d9;
 }
 
 .navbar-menu {
@@ -81,7 +81,7 @@
 }
 
 .nav-link:hover {
-  color: #17cf26;
+  color: #64b0d9;
 }
 
 .nav-cta {
@@ -94,7 +94,7 @@
   font-weight: 500;
   border-radius: 0.5rem;
   color: #ffffff;
-  background-color: #17cf26;
+  background-color: #64b0d9;
   transition: all 0.2s;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   text-decoration: none;

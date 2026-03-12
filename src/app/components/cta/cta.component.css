@@ -1,6 +1,6 @@
 .cta-section {
   padding: 6rem 0;
-  background-color: #2d382e;
+  background-color: #24323b;
   position: relative;
   overflow: hidden;
 }
@@ -14,7 +14,7 @@ img{
   position: absolute;
   inset: 0;
   opacity: 0.1;
-  background-image: radial-gradient(#17cf26 1px, transparent 1px);
+  background-image: radial-gradient(#64b0d9 1px, transparent 1px);
   background-size: 30px 30px;
 }
 
@@ -56,8 +56,8 @@ img{
   font-size: 1.125rem;
   font-weight: 700;
   border-radius: 0.5rem;
-  color: #2d382e;
-  background-color: #17cf26;
+  color: #24323b;
+  background-color: #64b0d9;
   transition: all 0.3s;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   text-decoration: none;
@@ -65,7 +65,7 @@ img{
 
 .cta-button:hover {
   background-color: #ffffff;
-  color: #17cf26;
+  color: #64b0d9;
   transform: translateY(-4px);
 }
 
