@@ -1,0 +1,33 @@
+﻿node.exe : [1m[33mThe "prerender" option is not considered when "outputMode" is 
+specified.[39m[22m
+At C:\Users\usuario\AppData\Roaming\npm\ng.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/@angular/cli/bin/ng.js" $arg ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([1m[33mThe "p...fied.[39m[22m:Str 
+   ing) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[33m❯[39m Building...
+[32m✔[39m Building...
+[1mInitial chunk files[22m  [2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mmain-CRVX4QFU.js[39m     [2m | [22m[2mmain[22m         [2m | [22m[36m253.00 kB[39m[2m | [22m               [36m66.52 kB[39m
+[32mpolyfills-5CFQRCPP.js[39m[2m | [22m[2mpolyfills[22m    [2m | [22m [36m34.59 kB[39m[2m | [22m               [36m11.33 kB[39m
+[32mstyles-WCBQVRKP.css[39m  [2m | [22m[2mstyles[22m       [2m | [22m [36m72 bytes[39m[2m | [22m               [36m72 bytes[39m
+
+[1m [22m                    [2m | [22m[1mInitial total[22m[2m | [22m[1m287.65 kB[22m[2m | [22m               [1m77.93 kB[22m
+
+[35mPrerendered 0 static routes.[39m
+Application bundle generation failed. [4.001 seconds] - 2026-03-19T01:34:32.705Z
+
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m 
+[1msrc/app/components/header/header.component.css exceeded maximum budget. Budget 
+2.00 kB was not met by 786 bytes with a total of 2.79 kB.[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mAn error occurred while 
+extracting routes.
+
+NG0401[0m
+
+[39m[22m
+

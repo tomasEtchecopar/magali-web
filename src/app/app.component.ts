@@ -44,9 +44,8 @@ import { Meta, Title } from '@angular/platform-browser';
 export class AppComponent {
   title = 'magali-adiestramiento-mdq';
 
-  constructor() {
-    const meta = inject(Meta);
-    inject(Title).setTitle('Magali Adiestramiento | Adiestradora Canina a Domicilio en Mar del Plata');
+  constructor(private meta: Meta, titleService: Title) {
+    titleService.setTitle('Magali Adiestramiento | Adiestradora Canina a Domicilio en Mar del Plata');
 
     meta.addTags([
       { name: 'description', content: 'Adiestramiento y educación canina a domicilio en Mar del Plata. Entrenamiento personalizado para tu perro con Magali, educadora canina profesional.' },
