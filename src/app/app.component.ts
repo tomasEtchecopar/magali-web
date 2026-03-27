@@ -45,23 +45,26 @@ export class AppComponent {
   title = 'magali-adiestramiento-mdq';
 
   constructor(private meta: Meta, titleService: Title) {
-    titleService.setTitle('Magali Adiestramiento | Adiestradora Canina a Domicilio en Mar del Plata');
+    titleService.setTitle('Adiestramiento Canino Mar del Plata | Magalí - Educación Canina Profesional');
 
     meta.addTags([
-      { name: 'description', content: 'Adiestramiento y educación canina a domicilio en Mar del Plata. Entrenamiento personalizado para tu perro con Magali, educadora canina profesional.' },
-      { name: 'keywords', content: 'adiestramiento canino Mar del Plata, educadora canina a domicilio, adiestradora de perros Mar del Plata, entrenamiento canino MDQ' },
-      { name: 'robots', content: 'index, follow' },
+      { name: 'description', content: 'Adiestramiento canino y educación canina a domicilio en Mar del Plata. Servicio profesional de adiestramiento de perros personalizado. Modificación de conducta sin salir de casa. ¡Consulta sin cargo!' },
+      { name: 'keywords', content: 'adiestramiento mar del plata, adiestramiento canino mar del plata, educacion canina mar del plata, adiestrador canino mdq, entrenamiento de perros, modificación conducta canina' },
+      { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
+      { name: 'googlebot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
+      { name: 'language', content: 'Spanish' },
 
-      { property: 'og:title', content: 'Magali Adiestramiento | Educadora Canina a Domicilio en Mar del Plata' },
-      { property: 'og:description', content: 'Entrenamiento y educación canina personalizada a domicilio en Mar del Plata. Resultados reales para vos y tu perro.' },
+      { property: 'og:title', content: 'Adiestramiento Canino Mar del Plata | Magalí' },
+      { property: 'og:description', content: 'Educación y adiestramiento de perros a domicilio en Mar del Plata. Entrenamiento personalizado para mejorar la conducta de tu perro.' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://magali-adiestramiento.vercel.app/' },
-      { property: 'og:image', content: 'https://tudominio.com/assets/bio.png' },
+      { property: 'og:image', content: 'https://magali-adiestramiento.vercel.app/assets/layne.jpeg' },
       { property: 'og:locale', content: 'es_AR' },
 
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Magali Adiestramiento | Mar del Plata' },
-      { name: 'twitter:description', content: 'Adiestramiento y educación canina a domicilio en Mar del Plata.' },
+      { name: 'twitter:title', content: 'Adiestramiento Canino Mar del Plata | Magalí' },
+      { name: 'twitter:description', content: 'Educación y adiestramiento de perros a domicilio. ¡Consulta sin cargo!' },
+      { name: 'twitter:image', content: 'https://magali-adiestramiento.vercel.app/assets/layne.jpeg' },
     ]);
 
   }
