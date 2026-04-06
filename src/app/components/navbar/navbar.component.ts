@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PHONE_NUMBER } from '../../constants';
 
@@ -10,5 +10,11 @@ import { PHONE_NUMBER } from '../../constants';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-PHONE_NUMBER = PHONE_NUMBER
+  PHONE_NUMBER = PHONE_NUMBER;
+  isScrolled = false;
+
+  @HostListener('window:scroll')
+  onScroll() {
+    this.isScrolled = window.scrollY > 20;
+  }
 }

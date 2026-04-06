@@ -45,7 +45,7 @@
 
 @media (min-width: 1024px) {
   .bio-image-wrapper {
-    grid-column: span 5;
+    grid-column: span 6;
     margin-bottom: 0;
   }
 }
@@ -72,7 +72,7 @@
 
 @media (min-width: 1024px) {
   .bio-content {
-    grid-column: span 7;
+    grid-column: span 6;
   }
 }
 
@@ -95,7 +95,7 @@
 }
 
 .bio-title {
-  font-size: 1.875rem;
+  font-size: 2.25rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 1.5rem;
@@ -107,7 +107,7 @@
 
 @media (min-width: 640px) {
   .bio-title {
-    font-size: 2.25rem;
+    font-size: 2.7rem;
   }
 }
 

@@ -32,7 +32,7 @@
 }
 
 .problems-title {
-  font-size: 1.875rem;
+  font-size: 2.25rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 1rem;
@@ -44,13 +44,13 @@
 
 @media (min-width: 640px) {
   .problems-title {
-    font-size: 2.25rem;
+    font-size: 2.7rem;
   }
 }
 
 .problems-subtitle {
   font-size: 1.125rem;
-  color: #6b7280;
+  color: #9ca3af;
 }
 
 .dark .problems-subtitle {
@@ -76,11 +76,11 @@
 }
 
 .problem-card {
-  background-color: #eef5f9;
+  background-color: #ffffff;
   padding: 2rem;
   border-radius: 0.75rem;
   transition: all 0.3s;
-  border: 1px solid transparent;
+  border: 1px solid #e5e7eb;
 }
 
 .dark .problem-card {
@@ -88,14 +88,14 @@
 }
 
 .problem-card:hover {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  border-color: rgba(23, 158, 207, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: rgba(100, 176, 217, 0.4);
 }
 
 .problem-icon {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: #178fcf33;
+  background-color: rgba(100, 176, 217, 0.12);
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
