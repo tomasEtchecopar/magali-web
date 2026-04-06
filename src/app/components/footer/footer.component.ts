@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PHONE_NUMBER } from '../../constants';
 
 @Component({
   selector: 'app-footer',
@@ -8,4 +9,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
 })
-export class FooterComponent {}
+export class FooterComponent {
+  PHONE_NUMBER = PHONE_NUMBER;
+}

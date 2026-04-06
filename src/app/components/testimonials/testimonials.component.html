@@ -2,7 +2,7 @@
   <div class="testimonials-container">
     <h2 class="testimonials-title">Experiencias de mis clientes</h2>
     <div class="testimonials-grid">
-      <div *ngFor="let testimonial of testimonials" class="testimonial-card">
+      <div *ngFor="let testimonial of testimonials; let i = index" class="testimonial-card" appReveal="stagger" [style.animation-delay]="i * 0.2 + 's'">
         <span class="material-icons quote-icon">format_quote</span>
         <p class="testimonial-quote">{{ testimonial.quote }}</p>
         <div class="testimonial-author">

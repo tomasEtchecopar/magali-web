@@ -1,4 +1,4 @@
-<section class="methodology-section" id="metodologia">
+<section class="methodology-section" id="metodologia" appReveal="fade-up">
   <div class="methodology-container">
     <div class="methodology-header">
       <h2 class="methodology-title">Mi metodología de adiestramiento canino</h2>
@@ -7,7 +7,7 @@
     <div class="methodology-content">
       <div class="methodology-timeline"></div>
       <div class="methodology-grid">
-        <div *ngFor="let step of steps" class="step-card">
+        <div *ngFor="let step of steps; let i = index" class="step-card" appReveal="stagger" [style.animation-delay]="i * 0.2 + 's'">
           <div class="step-number">{{ step.number }}</div>
           <h3 class="step-title">{{ step.title }}</h3>
           <p class="step-description">{{ step.description }}</p>

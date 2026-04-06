@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RevealDirective } from '../../directives/reveal.directive';
 
 interface Step {
   number: number;
@@ -10,7 +11,7 @@ interface Step {
 @Component({
   selector: 'app-methodology',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RevealDirective],
   templateUrl: './methodology.component.html',
   styleUrls: ['./methodology.component.css'],
 })

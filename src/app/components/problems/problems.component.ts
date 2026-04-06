@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RevealDirective } from '../../directives/reveal.directive';
 
 interface Problem {
   icon: string;
@@ -10,7 +11,7 @@ interface Problem {
 @Component({
   selector: 'app-problems',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RevealDirective],
   templateUrl: './problems.component.html',
   styleUrls: ['./problems.component.css'],
 })

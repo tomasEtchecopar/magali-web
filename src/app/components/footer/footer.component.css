@@ -1,7 +1,7 @@
 .footer {
   background-color: #0f1a22;
   color: #9ca3af;
-  padding: 3rem 0;
+  padding: 4.2rem 0 0;
   border-top: 1px solid #1f2937;
 }
 
@@ -9,74 +9,96 @@
   max-width: 80rem;
   margin: 0 auto;
   padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
 }
 
 @media (min-width: 640px) {
   .footer-container {
     padding: 0 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer-container {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .footer-container {
     padding: 0 2rem;
-  }
-}
-
-.footer-brand {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .footer-brand {
-    margin-bottom: 0;
-    text-align: left;
+    grid-template-columns: 2fr 1fr 1fr;
   }
 }
 
 .footer-logo {
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #ffffff;
+  display: block;
+  margin-bottom: 0.75rem;
 }
 
 .logo-highlight {
   color: #64b0d9;
 }
 
-.footer-location {
+.footer-description {
   font-size: 0.875rem;
-  margin-top: 0.25rem;
+  line-height: 1.7;
+  max-width: 24rem;
 }
 
-.footer-links {
+.footer-col-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+}
+
+.footer-nav-list,
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  gap: 1.5rem;
-  font-size: 0.875rem;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
-.footer-links a {
+.footer-nav-list a,
+.footer-contact-list a {
   color: #9ca3af;
-  transition: color 0.2s;
   text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s;
 }
 
-.footer-links a:hover {
+.footer-nav-list a:hover,
+.footer-contact-list a:hover {
   color: #64b0d9;
 }
 
-.footer-separator {
-  color: #4b5563;
+.footer-contact-list span {
+  font-size: 0.875rem;
+}
+
+.footer-bottom {
+  max-width: 80rem;
+  margin: 2.5rem auto 0;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #1f2937;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .footer-bottom {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-bottom {
+    padding: 1.5rem 2rem;
+  }
 }

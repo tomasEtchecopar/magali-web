@@ -1,7 +1,10 @@
 .header {
   position: relative;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 8.4rem;
+  padding-bottom: 5.6rem;
   overflow: hidden;
 }
 
@@ -14,15 +17,15 @@ img{
 
 @media (min-width: 768px) {
   .header {
-    padding-top: 8rem;
-    padding-bottom: 6rem;
+    padding-top: 11.2rem;
+    padding-bottom: 8.4rem;
   }
 }
 
 @media (min-width: 1024px) {
   .header {
-    padding-top: 10rem;
-    padding-bottom: 8rem;
+    padding-top: 14rem;
+    padding-bottom: 11.2rem;
   }
 }
 
@@ -41,11 +44,11 @@ img{
 .header-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, #0f1a22, rgba(17, 33, 18, 0.8), transparent);
+  background: linear-gradient(to right, rgba(15, 26, 34, 0.8), rgba(17, 33, 18, 0.56), transparent);
 }
 
 .dark .header-overlay {
-  background: linear-gradient(to right, #0f1a22, rgba(17, 33, 18, 0.8), transparent);
+  background: linear-gradient(to right, rgba(15, 26, 34, 0.8), rgba(17, 33, 18, 0.56), transparent);
 }
 
 .header-content {
@@ -98,12 +101,12 @@ img{
 }
 
 .header-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-size: 2.7rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
   color: #ffffff;
   margin-bottom: 1.5rem;
-  line-height: 1.1;
+  line-height: 1.05;
 }
 
 .dark .header-title {
@@ -112,13 +115,13 @@ img{
 
 @media (min-width: 768px) {
   .header-title {
-    font-size: 3rem;
+    font-size: 3.6rem;
   }
 }
 
 @media (min-width: 1024px) {
   .header-title {
-    font-size: 3.75rem;
+    font-size: 4.5rem;
   }
 }
 
